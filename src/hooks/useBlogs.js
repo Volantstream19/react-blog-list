@@ -5,10 +5,10 @@ export function useBlogs() {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
-    async function fetchBlog() {
+    const fetchBlog = async () => {
       const data = await getBlogs();
       setBlogs(data);
-    }
+    };
     fetchBlog();
   }, []);
 
