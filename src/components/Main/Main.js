@@ -4,7 +4,6 @@ import BlogCard from '../BlogCard/BlogCard';
 
 export default function Main() {
   const blogs = useBlogs();
-  console.log(blogs);
 
   return (
     <main>
